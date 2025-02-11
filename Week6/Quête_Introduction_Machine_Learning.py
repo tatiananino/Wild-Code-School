@@ -32,11 +32,11 @@ correlation = numeric_df.corr()['SUNHOUR'].abs()
 correlation_filtered = correlation[correlation >= 0.5]
 
 # Exclure la colonne cible 'SUNHOUR' elle-même
-correlation_filtered.drop('SUNHOUR')
+#correlation_filtered.drop('SUNHOUR')
 
 # Séparer les données en X (features) et y (target)
-X = numeric_df[correlation_filtered]
-y = numeric_df['SUNHOUR']
+#X = numeric_df[correlation_filtered]
+#y = numeric_df['SUNHOUR']
 
 # Diviser les données en train et test
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+#X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
